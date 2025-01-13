@@ -4,3 +4,4 @@
 
 - PayPal ✔️
 - PagBank ✔️
+- Stripe ✔️
