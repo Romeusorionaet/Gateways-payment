@@ -55,7 +55,7 @@ export function ButtonPayPal() {
         onApprove={async (data, actions) => {
           if (actions?.order) {
             const order = await actions.order.capture()
-            console.log(order, '==aprove')
+            console.log(order)
             handleApprove(data.orderID)
           }
         }}
