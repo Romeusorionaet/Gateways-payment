@@ -1,5 +1,6 @@
 import { ButtonPagBank } from '@/components/button-pagBank'
 import { ButtonPayPal } from '@/components/button-paypal'
+import { ButtonStripe } from '@/components/button-stripe'
 import Image from 'next/image'
 
 export default function Home() {
@@ -62,7 +63,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="spa w-80 space-y-4">
+        <div className="w-80 space-y-4">
           <div>
             <h2 className="font-bold">Pagar com PagBank</h2>
 
@@ -94,6 +95,27 @@ export default function Home() {
           </div>
 
           <ButtonPagBank />
+        </div>
+
+        <div className="w-80 space-y-4">
+          <h2 className="font-bold">Pagar com Stripe</h2>
+          <Image
+            width={500}
+            height={500}
+            src="/images/stripe.png"
+            alt=""
+            className="h-32"
+          />
+
+          <div>
+            <h3 className="font-bold">Cartão</h3>
+            <p>Utilize o cartão de teste.</p>
+            <p>Número: 4242 4242 4242 4242</p>
+            <p>CVc: 123</p>
+            <p>Expiração: 12/31</p>
+          </div>
+
+          <ButtonStripe />
         </div>
       </section>
     </main>

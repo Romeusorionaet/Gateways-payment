@@ -32,7 +32,7 @@ export const pagBankCheckout = async () => {
               reference_id: 'cobranca-01',
               description: 'Pagamento de teste',
               amount: {
-                value: 5000,
+                value: 4000,
                 currency: 'BRL',
               },
               payment_method: {
